@@ -8,7 +8,7 @@ main {
     margin: auto 5%;
     text-align: left;
     margin-top: 30px;
-    border-top: 4px solid #007257;
+    border-top: 4px solid #6D9886;
     color: white;
 }
 
@@ -24,7 +24,7 @@ a:hover {
     margin: auto;
     display: block;
     text-align: center;
-    background: #3a3a3a;
+    background: #393E46;
     margin: auto;
     
 }
@@ -32,13 +32,15 @@ a:hover {
     list-style-type: none;
     display: inline-block;
     align-items: center;
+    max-height:100% ;
+    
 }
 #cabecera a {
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25pt;
     display: block;
-    margin: 10px 50px;
+    /* outline: 1px solid red; */
     
 }    
 #cabecera a:visited {
@@ -46,6 +48,8 @@ a:hover {
 }
 #cabecera li {
     display: inline-block;
+    /* outline: 1px solid green; */
+    margin: 7px 10px;
 }
 
 
@@ -54,7 +58,7 @@ a:hover {
     font-size: 25pt;
     text-align: left;
     list-style-type: square;
-    background-color: #007257;
+    background-color: #6D9886;
     padding: 20px 100px;
 }
 
@@ -75,7 +79,7 @@ a:hover {
     
     padding-top: 20px;
     padding-left: 10px;
-    background-color: #007257;
+    background-color: #6D9886;
 }
 #formulario textarea{
     display: block;
@@ -92,6 +96,10 @@ a:hover {
 #maincontacto {
     margin-top: 30px;
     
+}
+.conjuntonav {
+    display: block;
+    width: 100%;
 }
 
 .titulo {
@@ -119,9 +127,45 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #007257;
+    background-color: #6D9886;
     font-size: 20pt;
     justify-content: center;
     align-items: center;
 }
 
+@media screen and (min-width: 600px) {
+    #cabecera {
+        margin: auto;
+        display: block;
+        text-align: center;
+        background: #393E46;
+        margin: auto;
+        
+    }
+    #cabecera ul {
+        list-style-type: none;
+        display: inline-block;
+        align-items: center;
+    }
+    #cabecera a {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        display: block;
+        
+    }
+    .conjuntonav    {
+        width: auto;
+        display: inline-block;
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    #cabecera a {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30pt;
+        display: block;
+        
+    }
+}
