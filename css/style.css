@@ -1,0 +1,127 @@
+* {
+    margin: 0px; 
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+    padding: 0px;
+}
+main {
+    margin: auto 5%;
+    text-align: left;
+    margin-top: 30px;
+    border-top: 4px solid #007257;
+    color: white;
+}
+
+a {
+    color: #000000;
+}
+a:hover {
+    color: #00dada
+    
+}
+
+#cabecera {
+    margin: auto;
+    display: block;
+    text-align: center;
+    background: #3a3a3a;
+    margin: auto;
+    
+}
+#cabecera ul {
+    list-style-type: none;
+    display: inline-block;
+    align-items: center;
+}
+#cabecera a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    margin: 10px 50px;
+    
+}    
+#cabecera a:visited {
+    color: #ffffff;
+}
+#cabecera li {
+    display: inline-block;
+}
+
+
+
+#enlaces-principales {
+    font-size: 25pt;
+    text-align: left;
+    list-style-type: square;
+    background-color: #007257;
+    padding: 20px 100px;
+}
+
+
+
+
+
+#bienvenida {
+    text-align: center;
+    margin: 20px;
+    font-size:30pt ;
+    background-color: white;
+    color: black;
+}
+
+#aqui-en {
+    font-size: 20pt;
+    
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: #007257;
+}
+#formulario textarea{
+    display: block;
+}
+#nomemail input {
+    margin: 0 20px 20px 20px;
+    
+}
+#mensajelabel {
+    margin-bottom: 20px;
+    
+}
+
+#maincontacto {
+    margin-top: 30px;
+    
+}
+
+.titulo {
+    
+    text-align: left;
+    font-size: 50pt;
+    font-family: 'Lobster', cursive;
+    margin: 2% 5%;
+}
+
+.sublist {
+    margin-left: 15px;
+    list-style-type: circle;
+    font-size: 15pt;
+}
+.entrada {
+    color: black;
+    padding: 20px;
+    font-size: 20pt;
+}
+.formulario {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #007257;
+    font-size: 20pt;
+    justify-content: center;
+    align-items: center;
+}
+
