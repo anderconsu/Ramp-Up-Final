@@ -19,7 +19,24 @@ a:hover {
     color: #00dada
     
 }
+h3 {
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+img {
+    max-width: 100%;
+}
 
+picture
+{
+    width: 100%;
+}
+figcaption {
+    margin: 5px;
+    font-size: 0.9rem;
+    color: black;
+}
 #cabecera {
     margin: auto;
     display: block;
@@ -108,6 +125,28 @@ a:hover {
     margin: 3% 5%;
 }
 
+
+/* ====BIOGRAFIA===== */
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* outline: 1px solid blue; */
+}
+
+
+.monstertext {
+    color: black;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 2%;
+}
+
+.monstruodespagueti>* {
+    margin: 10px 0;
+}
 .sublist {
     margin-left: 15px;
     list-style-type: circle;
@@ -138,12 +177,15 @@ a:hover {
 
 */
 @media screen and (min-width: 768px) {
+    figure {
+        max-width: 50%;
+    }
+
     #cabecera {
         position: sticky;
         top: 0;
         
     }
-    
     #cabecera a {
         font-size: 30px;
         
@@ -152,6 +194,23 @@ a:hover {
         width: auto;
         display: inline-block;
     }
+
+    /* BIOGRAFIA */
+    .flexcontainer {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    }
+    
+    .monstertext {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+    #entradamonstruo {
+        max-width: 50%;
+        font-size: 1.2rem;
+    }
+    
     
 }
 /* =====================768============================================
