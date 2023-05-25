@@ -26,13 +26,11 @@ a:hover {
     text-align: center;
     background: #393E46;
     margin: auto;
-    
 }
 #cabecera ul {
     list-style-type: none;
     display: inline-block;
     align-items: center;
-    max-height:100% ;
     
 }
 #cabecera a {
@@ -107,7 +105,7 @@ a:hover {
     text-align: left;
     font-size: 50pt;
     font-family: 'Lobster', cursive;
-    margin: 2% 5%;
+    margin: 3% 5%;
 }
 
 .sublist {
@@ -133,25 +131,21 @@ a:hover {
     align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+
+
+/* =====================768============================================
+
+
+*/
+@media screen and (min-width: 768px) {
     #cabecera {
-        margin: auto;
-        display: block;
-        text-align: center;
-        background: #393E46;
-        margin: auto;
+        position: sticky;
+        top: 0;
         
     }
-    #cabecera ul {
-        list-style-type: none;
-        display: inline-block;
-        align-items: center;
-    }
+    
     #cabecera a {
-        text-align: center;
-        font-weight: bold;
         font-size: 30px;
-        display: block;
         
     }
     .conjuntonav    {
@@ -160,12 +154,20 @@ a:hover {
     }
     
 }
+/* =====================768============================================
+
+
+*/
 @media screen and (min-width: 900px) {
-    #cabecera a {
-        text-align: center;
-        font-weight: bold;
-        font-size: 30pt;
+    main {
+        max-width: 1920px;
+        margin: auto;
+        width: 80%;
+    }
+    .titulo{
+        width: 80%;
         display: block;
-        
+        margin: 2% auto;
+        max-width: 1920px;
     }
 }
