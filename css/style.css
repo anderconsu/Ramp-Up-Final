@@ -19,13 +19,31 @@ a:hover {
     color: #00dada
     
 }
+h2 {
+    font-size: 2.5rem;
+}
 h3 {
+    font-size: 2rem;
     width: 100%;
     text-align: center;
     color: black;
+    font-weight: bold;
+    padding: 0 2%
+}
+h4 {
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0 2%
 }
 img {
     max-width: 100%;
+}
+video {
+    width: 100%;
 }
 
 picture
@@ -36,6 +54,13 @@ figcaption {
     margin: 5px;
     font-size: 0.9rem;
     color: black;
+}
+.titulo {
+    
+    text-align: left;
+    font-size: 50pt;
+    font-family: 'Lobster', cursive;
+    margin: 3% 5%;
 }
 #cabecera {
     margin: auto;
@@ -68,7 +93,7 @@ figcaption {
 }
 
 
-
+/* ====Inicio===== */
 #enlaces-principales {
     font-size: 25pt;
     text-align: left;
@@ -76,10 +101,6 @@ figcaption {
     background-color: #6D9886;
     padding: 20px 100px;
 }
-
-
-
-
 
 #bienvenida {
     text-align: center;
@@ -96,6 +117,47 @@ figcaption {
     padding-left: 10px;
     background-color: #6D9886;
 }
+/* ========= end inicio */
+
+
+
+
+
+/* ====BIOGRAFIA===== */
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* outline: 1px solid blue; */
+    align-items: center;
+}
+
+.monstertext {
+    color: black;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 2%;
+    line-height: 1.5rem;
+    /* outline: 2px solid red; */
+}
+
+.monstruodespagueti>* {
+    margin: 10px 0;
+}
+
+.imgtexto {
+    /* outline: 2px solid red; */
+    margin: auto;
+}
+
+/* ========= end biografia */
+
+
+
+
+/* ====CONTACTO===== */
 #formulario textarea{
     display: block;
 }
@@ -117,36 +179,6 @@ figcaption {
     width: 100%;
 }
 
-.titulo {
-    
-    text-align: left;
-    font-size: 50pt;
-    font-family: 'Lobster', cursive;
-    margin: 3% 5%;
-}
-
-
-/* ====BIOGRAFIA===== */
-.flexcontainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    /* outline: 1px solid blue; */
-}
-
-
-.monstertext {
-    color: black;
-    font-size: 1.5rem;
-    text-align: left;
-    padding: 0 2%;
-}
-
-.monstruodespagueti>* {
-    margin: 10px 0;
-}
 .sublist {
     margin-left: 15px;
     list-style-type: circle;
@@ -155,13 +187,13 @@ figcaption {
 .entrada {
     color: black;
     padding: 20px;
-    font-size: 20pt;
 }
 .formulario {
     color: white;
     text-align: center;
     margin: 0 auto;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     padding: 20px;
     background-color: #6D9886;
@@ -170,6 +202,10 @@ figcaption {
     align-items: center;
 }
 
+/* ========= end contacto */
+
+
+
 
 
 /* =====================768============================================
@@ -177,7 +213,7 @@ figcaption {
 
 */
 @media screen and (min-width: 768px) {
-    figure {
+    .figurelateral {
         max-width: 50%;
     }
 
