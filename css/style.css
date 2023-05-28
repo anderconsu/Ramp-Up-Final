@@ -21,6 +21,7 @@ a:hover {
 }
 h2 {
     font-size: 2.5rem;
+    color: black;
 }
 h3 {
     font-size: 2rem;
@@ -42,9 +43,7 @@ h4 {
 img {
     max-width: 100%;
 }
-video {
-    width: 100%;
-}
+
 
 picture
 {
@@ -55,12 +54,29 @@ figcaption {
     font-size: 0.9rem;
     color: black;
 }
+
+.flexcontainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* outline: 1px solid blue; */
+    align-items: center;
+    
+}
 .titulo {
     
     text-align: left;
     font-size: 50pt;
     font-family: 'Lobster', cursive;
     margin: 3% 5%;
+}
+.centered{
+    text-align: center;
+    display: block;
+}
+.flexleft {
+    align-items: flex-start;
 }
 #cabecera {
     margin: auto;
@@ -120,19 +136,41 @@ figcaption {
 /* ========= end inicio */
 
 
+/* ====PORFOLIO===== */
+#trabajos {
+    margin: 5% auto;
+    gap: 10px;
+}
+
+#trabajos article { 
+    align-items: stretch;
+    font-size: 1.2rem;
+    gap: 10px;
+    width: 100%;
+    min-height: 200px;
+    background-color: #6D9886 ;
+    padding: 1%;
+}
+#trabajos h3 {
+    font-size: 1.5rem;
+    
+}
+.artportfolio ul{
+    
+    padding-left: 10%; 
+    list-style: square;
+}
+.artportfolio video, audio{
+ max-height: 50%;
+ max-width: 100%;
+ padding: 10px;
+}
 
 
+
+/* ========= end portfolio */
 
 /* ====BIOGRAFIA===== */
-.flexcontainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    /* outline: 1px solid blue; */
-    align-items: center;
-}
 
 .monstertext {
     color: black;
@@ -151,6 +189,7 @@ figcaption {
     /* outline: 2px solid red; */
     margin: auto;
 }
+
 
 /* ========= end biografia */
 
@@ -204,7 +243,9 @@ figcaption {
 
 /* ========= end contacto */
 
-
+#never{
+    width: 100%;
+}
 
 
 
@@ -213,9 +254,7 @@ figcaption {
 
 */
 @media screen and (min-width: 768px) {
-    .figurelateral {
-        max-width: 50%;
-    }
+    
 
     #cabecera {
         position: sticky;
@@ -226,18 +265,21 @@ figcaption {
         font-size: 30px;
         
     }
+
     .conjuntonav    {
         width: auto;
         display: inline-block;
     }
 
     /* BIOGRAFIA */
-    .flexcontainer {
+    .monstruodespagueti {
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: flex-end;
     }
-    
+    .figurelateral {
+        max-width: 50%;
+    }
     .monstertext {
         max-width: 100%;
         font-size: 1.2rem;
@@ -247,6 +289,17 @@ figcaption {
         font-size: 1.2rem;
     }
     
+    /* PORTFOLIO */
+    #trabajos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    #trabajos article {
+        width: calc(50% - 10px);
+    }
+
     
 }
 /* =====================768============================================
@@ -264,5 +317,10 @@ figcaption {
         display: block;
         margin: 2% auto;
         max-width: 1920px;
+    }
+     
+    /* PORTFOLIO */
+    #trabajos article {
+        width: calc(33% - 10px);
     }
 }
