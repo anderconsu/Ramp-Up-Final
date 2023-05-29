@@ -10,6 +10,10 @@ main {
     margin-top: 30px;
     border-top: 4px solid #6D9886;
     color: white;
+
+    animation: wipe-in-left;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 a {
@@ -159,7 +163,10 @@ figcaption {
     padding-left: 10%; 
     list-style: square;
 }
-.artportfolio video, audio{
+#convencion picture{
+ width: 100%;
+}
+.artportfolio video, audio, img{
  max-height: 100%;
  max-width: 100%;
  padding: 10px;
@@ -269,7 +276,9 @@ figcaption {
         width: auto;
         display: inline-block;
     }
-
+    /* Inicio */
+    
+   
     /* BIOGRAFIA */
     .monstruodespagueti {
     flex-wrap: wrap;
@@ -299,6 +308,9 @@ figcaption {
         width: calc(50% - 10px);
     }
 
+    #convencion picture, img{
+        width: 100%;
+       }
     
 }
 /* =====================768============================================
