@@ -50,9 +50,20 @@
                 </div>
             </div>
             <div id="mensajesoporte" class="input">
+                <label for="selectmotivo">Seleccione el motivo:</label>
+                <select name="motivo" id="selectmotivo">
+                    <option value="peticion">Sugerencia</option>
+                    <option value="queja">Queja</option>
+                    <option value="">Problema</option>
+                    <option value="agradecimiento">Agradecimiento</option>
+                    
+                </select>
+            </div>
+            <div id="mensajesoporte" class="input">
                 <label id="mensajelabel" for="mensaje">Mensaje: </label>
                     <textarea id="mensaje" name="mensaje" cols="40" rows="10" placeholder="Explique que es lo que desea"></textarea>
             </div>
+            
             <button type="submit" class="btn">Enviar</button>
         </form>
     </main>
