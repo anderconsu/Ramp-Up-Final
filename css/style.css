@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
 * {
     margin: 0px; 
     /* outline: 1px solid red; */
@@ -58,6 +61,7 @@ figcaption {
     font-size: 0.9rem;
     color: black;
 }
+
 
 .flexcontainer {
     display: flex;
@@ -147,7 +151,8 @@ figcaption {
 }
 
 #trabajos article { 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-family: 'Playfair', serif;
     gap: 10px;
     width: 100%;
     min-height: 200px;
@@ -181,6 +186,7 @@ figcaption {
 .monstertext {
     color: black;
     font-size: 1.5rem;
+    font-family: 'Playfair', serif;
     text-align: left;
     padding: 0 2%;
     line-height: 1.5rem;
@@ -246,6 +252,36 @@ figcaption {
     justify-content: center;
     align-items: center;
 }
+
+/* boton */
+.btn{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6d9886;
+    padding: 10px 30px;
+    border: solid #ffffff 7px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 21px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+.btn:hover{
+    
+    transition : 500ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 7px #0066cc;
+    }
 
 /* ========= end contacto */
 
