@@ -13,10 +13,6 @@ main {
     margin-top: 30px;
     border-top: 4px solid #6D9886;
     color: white;
-
-    animation: wipe-in-left;
-    animation-duration: 2s;
-    animation-fill-mode: both;
 }
 
 a {
